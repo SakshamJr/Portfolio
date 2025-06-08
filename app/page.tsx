@@ -179,7 +179,7 @@ export default function Home() {
       {/* Hero Section */}
       <section id="hero" className="pt-32 pb-20 px-6">
         <div className="container mx-auto max-w-7xl">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
+          <div className="flex flex-col-reverse lg:flex-row gap-12 items-center">
             <motion.div
               className="space-y-8"
               initial={{ opacity: 0, x: -50 }}
