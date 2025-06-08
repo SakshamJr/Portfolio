@@ -305,11 +305,11 @@ export default function Home() {
                   <img
                     src="/profile.jpg"
                     alt="Saksham's Photo"
-                    className="w-80 h-80 rounded-3xl shadow-2xl flex items-center object-cover border-2 border-white"
+                    className="w-80 h-80 rounded-3xl shadow-2xl flex items-center object-cover border-2 border-white z-40"
                   />
+                <div className="absolute -top-4 -right-4 w-24 h-24 bg-yellow-400 rounded-2xl opacity-20 blur-xl z-10"></div>
+                <div className="absolute -bottom-4 -left-4 w-32 h-32 bg-pink-400 rounded-2xl opacity-20 blur-xl z-10"></div>
                 </motion.div>
-                <div className="absolute -top-4 -right-4 w-24 h-24 bg-yellow-400 rounded-2xl opacity-20 blur-xl"></div>
-                <div className="absolute -bottom-4 -left-4 w-32 h-32 bg-pink-400 rounded-2xl opacity-20 blur-xl"></div>
               </div>
             </motion.div>
           </div>
