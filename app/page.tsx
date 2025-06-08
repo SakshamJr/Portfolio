@@ -305,7 +305,7 @@ export default function Home() {
                   <img
                     src="/profile.jpg"
                     alt="Saksham's Photo"
-                    className="w-80 h-80 rounded-3xl shadow-2xl flex items-center object-cover border-2 border-white shadow-md"
+                    className="w-80 h-80 rounded-3xl shadow-2xl flex items-center object-cover border-2 border-white"
                   />
                 </motion.div>
                 <div className="absolute -top-4 -right-4 w-24 h-24 bg-yellow-400 rounded-2xl opacity-20 blur-xl"></div>
@@ -331,7 +331,7 @@ export default function Home() {
 
             <div className="grid lg:grid-cols-2 gap-8">
               <motion.div variants={scaleIn}>
-                <Card className="group hover:shadow-2xl transition-all duration-300 border-0 shadow-lg bg-white/80 dark:bg-slate-800/80 backdrop-blur-sm">
+                <Card className="h-full group hover:shadow-2xl transition-all duration-300 border-0 shadow-lg bg-white/80 dark:bg-slate-800/80 backdrop-blur-sm">
                   <CardHeader className="pb-4">
                     <div className="flex items-start justify-between">
                       <div className="flex items-center space-x-3">
@@ -383,7 +383,7 @@ export default function Home() {
               </motion.div>
 
               <motion.div variants={scaleIn}>
-                <Card className="group hover:shadow-2xl transition-all duration-300 border-0 shadow-lg bg-white/80 dark:bg-slate-800/80 backdrop-blur-sm">
+                <Card className="h-full group hover:shadow-2xl transition-all duration-300 border-0 shadow-lg bg-white/80 dark:bg-slate-800/80 backdrop-blur-sm">
                   <CardHeader className="pb-4">
                     <div className="flex items-start justify-between">
                       <div className="flex items-center space-x-3">
@@ -506,7 +506,7 @@ export default function Home() {
                             <exp.icon className="w-6 h-6 text-white" />
                           </div>
                           <div>
-                            <CardTitle className={`text-xl group-hover:text-${exp.color}-600 transition-colors`}>
+                            <CardTitle className={`text-xl group-hover:text-${exp.color}-500 transition-colors`}>
                               {exp.title}
                             </CardTitle>
                             <CardDescription className="text-slate-600 dark:text-slate-400">
@@ -942,9 +942,8 @@ export default function Home() {
 
             <Separator className="bg-slate-800" />
 
-            <div className="flex flex-col md:flex-row justify-between items-center text-slate-400 text-sm">
+            <div className="flex flex-col md:flex-row justify-center items-center text-slate-400 text-sm pt-4">
               <p>© 2024 Saksham Sapkota. All rights reserved.</p>
-              <p>Built with Next.js, Framer Motion & Tailwind CSS</p>
             </div>
           </motion.div>
         </div>
