@@ -108,10 +108,10 @@ export default function Home() {
             >
               <div className="w-10 h-10 bg-gradient-to-br from-blue-600 via-purple-600 to-indigo-600 rounded-xl flex items-center justify-center text-white font-bold text-lg shadow-lg">
                 <img
-                    src="/profile.jpg"
-                    alt="Saksham's Photo"
-                    className="w-10 h-10 rounded-xl flex items-center object-cover border-1 border-white shadow-md"
-                  />
+                  src="/profile.jpg"
+                  alt="Saksham's Photo"
+                  className="w-10 h-10 rounded-xl flex items-center object-cover border-1 border-white shadow-md"
+                />
               </div>
               <h1 className="text-xl font-bold bg-gradient-to-r from-slate-900 via-blue-800 to-slate-900 dark:from-white dark:via-blue-200 dark:to-white bg-clip-text text-transparent">
                 Saksham Sapkota
@@ -307,8 +307,8 @@ export default function Home() {
                     alt="Saksham's Photo"
                     className="w-80 h-80 rounded-3xl shadow-2xl flex items-center object-cover border-2 border-white z-40"
                   />
-                <div className="absolute -top-4 -right-4 w-24 h-24 bg-yellow-400 rounded-2xl opacity-20 blur-xl z-10"></div>
-                <div className="absolute -bottom-4 -left-4 w-32 h-32 bg-pink-400 rounded-2xl opacity-20 blur-xl z-10"></div>
+                  <div className="absolute -top-4 -right-4 w-24 h-24 bg-yellow-400 rounded-2xl opacity-20 blur-xl z-10"></div>
+                  <div className="absolute -bottom-4 -left-4 w-32 h-32 bg-pink-400 rounded-2xl opacity-20 blur-xl z-10"></div>
                 </motion.div>
               </div>
             </motion.div>
@@ -544,16 +544,14 @@ export default function Home() {
       <section id="projects" className="py-20 px-6 bg-white/50 dark:bg-slate-900/50 backdrop-blur-sm">
         <div className="container mx-auto max-w-7xl">
           <motion.div variants={staggerContainer} initial="initial" whileInView="animate" viewport={{ once: true }}>
-            <motion.div className="text-center mb-16" variants={fadeInUp}>
-              <h2 className="text-4xl lg:text-5xl font-bold mb-4 bg-gradient-to-r from-slate-900 via-blue-800 to-slate-900 dark:from-white dark:via-blue-200 dark:to-white bg-clip-text text-transparent">
-                Featured Project
+            <motion.div className="text-center mb-8" variants={fadeInUp}>
+              <h2 className="text-4xl lg:text-5xl font-bold bg-gradient-to-r from-slate-900 via-blue-800 to-slate-900 dark:from-white dark:via-blue-200 dark:to-white bg-clip-text text-transparent">
+                Featured Projects
               </h2>
-              <p className="text-xl text-slate-600 dark:text-slate-400 max-w-2xl mx-auto">
-                Deep learning solution for grape disease detection
-              </p>
             </motion.div>
 
-            <motion.div variants={scaleIn} className="max-w-4xl mx-auto">
+
+            <motion.div variants={scaleIn} className="max-w-4xl mx-auto mb-8">
               <Card className="group hover:shadow-2xl transition-all duration-300 border-0 shadow-xl bg-white/80 dark:bg-slate-800/80 backdrop-blur-sm overflow-hidden">
                 <div className="bg-gradient-to-r from-green-500 to-emerald-600 p-6">
                   <div className="flex items-center justify-between">
@@ -633,7 +631,100 @@ export default function Home() {
                   <div className="pt-4 border-t border-slate-200 dark:border-slate-700">
                     <h4 className="font-semibold mb-3 text-slate-700 dark:text-slate-300">Technologies Used</h4>
                     <div className="flex flex-wrap gap-2">
-                      {["Python", "TensorFlow", "FastAPI", "CNN", "Deep Learning", "Dropout Regularization","Pooling","Tensorflow Pipelines"].map((tech) => (
+                      {["Python", "TensorFlow", "FastAPI", "CNN", "Deep Learning", "Dropout Regularization", "Pooling", "Tensorflow Pipelines"].map((tech) => (
+                        <Badge
+                          key={tech}
+                          variant="secondary"
+                          className="bg-slate-100 dark:bg-slate-700 hover:bg-slate-200 dark:hover:bg-slate-600 transition-colors"
+                        >
+                          {tech}
+                        </Badge>
+                      ))}
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+            </motion.div>
+            
+            <motion.div variants={scaleIn} className="max-w-4xl mx-auto">
+              <Card className="group hover:shadow-2xl transition-all duration-300 border-0 shadow-xl bg-white/80 dark:bg-slate-800/80 backdrop-blur-sm overflow-hidden">
+                <div className="bg-gradient-to-r from-blue-500 to-indigo-600 p-6">
+                  <div className="flex items-center justify-between">
+                    <div className="flex items-center space-x-4">
+                      <div className="w-16 h-16 bg-white/20 rounded-2xl flex items-center justify-center">
+                        <Code className="w-8 h-8 text-white" />
+                      </div>
+                      <div>
+                        <h3 className="text-2xl font-bold text-white">Vehicle Number Plate Recognition</h3>
+                        <p className="text-blue-100">AI-Powered License Plate Detection System</p>
+                      </div>
+                    </div>
+                    <a href="https://github.com/SakshamJr/Automatic-Vehicle-Number-Plate-Recognition">
+                      <Button
+                        variant="secondary"
+                        size="lg"
+                        className="bg-white/20 hover:bg-white/30 text-white border-white/30"
+                      >
+                        <ExternalLink size={18} className="mr-2" />
+                        View Project
+                      </Button>
+                    </a>
+                  </div>
+                </div>
+
+                <CardContent className="p-8 space-y-6">
+                  <p className="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+                    An advanced vehicle license plate recognition system using YOLOv8 and EasyOCR for real-time detection, tracking, and OCR processing. Ideal for traffic monitoring and surveillance applications.
+                  </p>
+
+                  <div className="grid md:grid-cols-2 gap-6">
+                    <div className="space-y-3">
+                      <h4 className="font-semibold text-lg text-slate-700 dark:text-slate-300 flex items-center">
+                        <Star className="w-5 h-5 text-yellow-500 mr-2" />
+                        Key Features
+                      </h4>
+                      <ul className="space-y-2 text-slate-600 dark:text-slate-400">
+                        <li className="flex items-center space-x-2">
+                          <div className="w-2 h-2 bg-green-500 rounded-full"></div>
+                          <span>Real-time vehicle tracking with SORT</span>
+                        </li>
+                        <li className="flex items-center space-x-2">
+                          <div className="w-2 h-2 bg-blue-500 rounded-full"></div>
+                          <span>Custom trained YOLOv8 model</span>
+                        </li>
+                        <li className="flex items-center space-x-2">
+                          <div className="w-2 h-2 bg-purple-500 rounded-full"></div>
+                          <span>Automated CSV data export</span>
+                        </li>
+                      </ul>
+                    </div>
+
+                    <div className="space-y-3">
+                      <h4 className="font-semibold text-lg text-slate-700 dark:text-slate-300 flex items-center">
+                        <Code className="w-5 h-5 text-blue-500 mr-2" />
+                        Technical Highlights
+                      </h4>
+                      <ul className="space-y-2 text-slate-600 dark:text-slate-400">
+                        <li className="flex items-center space-x-2">
+                          <div className="w-2 h-2 bg-red-500 rounded-full"></div>
+                          <span>CUDA-accelerated processing</span>
+                        </li>
+                        <li className="flex items-center space-x-2">
+                          <div className="w-2 h-2 bg-yellow-500 rounded-full"></div>
+                          <span>EasyOCR text recognition</span>
+                        </li>
+                        <li className="flex items-center space-x-2">
+                          <div className="w-2 h-2 bg-indigo-500 rounded-full"></div>
+                          <span>Multi-object tracking</span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <div className="pt-4 border-t border-slate-200 dark:border-slate-700">
+                    <h4 className="font-semibold mb-3 text-slate-700 dark:text-slate-300">Technologies Used</h4>
+                    <div className="flex flex-wrap gap-2">
+                      {["Python", "YOLOv8", "EasyOCR", "OpenCV", "CUDA", "SORT", "NumPy", "Pandas"].map((tech) => (
                         <Badge
                           key={tech}
                           variant="secondary"
