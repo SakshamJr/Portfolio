@@ -724,7 +724,7 @@ export default function Home() {
                   <div className="pt-4 border-t border-slate-200 dark:border-slate-700">
                     <h4 className="font-semibold mb-3 text-slate-700 dark:text-slate-300">Technologies Used</h4>
                     <div className="flex flex-wrap gap-2">
-                      {["Python", "YOLOv8", "EasyOCR", "OpenCV", "CUDA", "SORT", "NumPy", "Pandas"].map((tech) => (
+                      {["Python", "YOLOv8", "EasyOCR", "OpenCV", "CUDA", "SORT", "NumPy", "Pandas","TensorRT","Pytorch"].map((tech) => (
                         <Badge
                           key={tech}
                           variant="secondary"
@@ -871,13 +871,13 @@ export default function Home() {
               {[
                 {
                   category: "Languages",
-                  skills: ["C/C++", "Python", "HTML", "JavaScript", "Java", "SQL"],
+                  skills: ["C","C++", "Python", "HTML", "JavaScript", "Java", "SQL"],
                   color: "blue",
                   icon: Code,
                 },
                 {
                   category: "Frameworks",
-                  skills: ["NumPy", "Pandas", "Matplotlib", "Seaborn", "Scikit-Learn", "TensorFlow", "Streamlit"],
+                  skills: ["NumPy", "Pandas", "Matplotlib", "Seaborn", "Scikit-Learn", "TensorFlow", "Streamlit","YOLO","OpenCV"],
                   color: "green",
                   icon: Award,
                 },
@@ -989,7 +989,7 @@ export default function Home() {
                 Let's Connect & Collaborate
               </h3>
               <p className="text-slate-400 max-w-2xl mx-auto">
-                Always open to discussing AI/ML projects, research opportunities, or just having a conversation about
+                Always open to discussing AI/ML/CV projects, research opportunities, or just having a conversation about
                 technology and innovation.
               </p>
             </div>
