@@ -16,6 +16,8 @@ import {
   GraduationCap,
   Briefcase,
   Code,
+  Code2,
+  FileCode,
   Award,
   User,
   Menu,
@@ -556,8 +558,8 @@ export default function Home() {
                 <div className="bg-gradient-to-r from-green-500 to-emerald-600 p-6">
                   <div className="flex items-center justify-between">
                     <div className="flex items-center space-x-4">
-                      <div className="w-16 h-16 bg-white/20 rounded-2xl flex items-center justify-center">
-                        <Code className="w-8 h-8 text-white" />
+                      <div className="w-16 h-16 bg-white/30 rounded-2xl flex items-center justify-center">
+                        <Code2 className="w-8 h-8 text-white" />
                       </div>
                       <div>
                         <h3 className="text-2xl font-bold text-white">Grape Disease Identification</h3>
@@ -570,8 +572,8 @@ export default function Home() {
                         size="lg"
                         className="bg-white/20 hover:bg-white/30 text-white border-white/30"
                       >
-                        <ExternalLink size={18} className="mr-2" />
-                        View Project
+                        <ExternalLink size={18} className="mr-0" />
+
                       </Button>
                     </a>
                   </div>
@@ -652,7 +654,7 @@ export default function Home() {
                   <div className="flex items-center justify-between">
                     <div className="flex items-center space-x-4">
                       <div className="w-16 h-16 bg-white/20 rounded-2xl flex items-center justify-center">
-                        <Code className="w-8 h-8 text-white" />
+                        <FileCode className="w-8 h-8 text-white" />
                       </div>
                       <div>
                         <h3 className="text-2xl font-bold text-white">Vehicle Number Plate Recognition</h3>
@@ -665,8 +667,7 @@ export default function Home() {
                         size="lg"
                         className="bg-white/20 hover:bg-white/30 text-white border-white/30"
                       >
-                        <ExternalLink size={18} className="mr-2" />
-                        View Project
+                        <ExternalLink size={18} className="mr-0" />
                       </Button>
                     </a>
                   </div>
